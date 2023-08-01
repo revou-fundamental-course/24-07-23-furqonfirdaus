@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- awal navbar -->
+        <div class="logoNav">
+          <h4>Muhammad Furqon Firdaus</h4>
+        </div>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Package</a></li>
+          <li><a href="galeri.html">Gallery</a></li>
+        </ul>
+        <!-- akhir navbar -->
+      </nav>
+      <hr class="hrhr" />
+      <h1>Your Trusted Travel Agent's</h1>
+      <br />
+      <br />
+      <h4>Your Happiness Is Our Happiness</h4>
+      <div class="banner">
+        <div class="slider">
+          <img class="banner-slide" src="Galeri/1.jpg" alt="Banner 1" />
+          <img class="banner-slide" src="Galeri/13.jpg" alt="Banner 2" />
+          <img class="banner-slide" src="Galeri/16.jpg" alt="Banner 3" />
+        </div>
+        <p>"liburan jadi menyenangkan bersama Travel Agentku"</p>
+      </div>
+    </header>
+
+    <main>
+      <!-- Call to Action Section -->
+      <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+        <form id="contactForm" onsubmit="return validateForm()">
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="First and Last Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Adress:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="destination">What are you interested in?</label>
+            <select class="destination">
+              <option value="" disabled selected hidden>Select Option</option>
+              <option value="Bali">Bali</option>
+              <option value="Japan">Japan</option>
+              <option value="Singapore">Singapore</option>
+              <option value="Bandung">Bandung</option>
+              <option value="Surabaya">Surabaya</option>
+              <option value="Third Feature">Third Feature</option>
+            </select>
+          </div>
+          <button type="Send">Send</button>
+        </form>
+      </section>
+    </main>
+    <script src="script.js"></script>
+    <p><img class="profil" src="Galeri/3.jpg" alt="profil1" /></p>
+    <p>Florence Hughes</p>
+    <p>Ibu Rumah Tangga, 28</p>
+    <hr size="10" />
+  </body>
+</html>

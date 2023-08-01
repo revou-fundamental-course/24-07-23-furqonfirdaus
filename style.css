@@ -1,0 +1,205 @@
+header {
+  background-color: white;
+  padding-bottom: 50px;
+}
+
+nav {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-between;
+  color: rgb(0, 0, 0);
+  height: 40px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+nav .logoNav {
+  font-family: "Roboto";
+  margin-left: 15px;
+  letter-spacing: 3px;
+  font-size: 13pt;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 25%;
+  border: 5px black;
+}
+
+nav ul li a {
+  color: rgb(18, 20, 20);
+  text-decoration: none;
+  font-size: 13pt;
+  list-style: none;
+  margin-right: 1px;
+  border: solid black;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+nav ul li a:hover {
+  color: tomato;
+}
+
+h1 {
+  position: center;
+  text-align: center;
+}
+h4 {
+  position: center;
+  text-align: center;
+}
+.banner {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+  padding: 40px;
+}
+
+.banner .slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.banner-slide:first-child {
+  display: block;
+}
+
+/* Styles for the contact section */
+.contact {
+  padding: 50px;
+  padding-top: 110px;
+  text-align: center;
+  background-color: #ddd;
+  width: 30%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+
+.contact h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select.destination {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select.destination:focus {
+  background-image: linear-gradient(45deg, white 50%, transparent 50%), linear-gradient(135deg, transparent 50%, white 50%), linear-gradient(to right, gray, gray);
+  border-color: black;
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+  border-color: 1px solid;
+  outline: 1;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+/* Styles for the packages section */
+.packages {
+  position: relative;
+  padding: 50px 0;
+  text-align: center;
+  display: absolute;
+}
+
+.packages h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.package-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.package-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.package-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.profil {
+  width: 90px;
+  height: 90px;
+  background: rgb(85, 82, 82);
+  border-radius: 100%;
+}
+.hrhr {
+  width: 100%;
+  margin: 0 auto;
+}
+hr {
+  width: 10%;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+hr.half-width {
+  width: 10%;
+  margin: 0 auto;
+}
+/* Add styles for the banner, packages, and contact form sections */
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* Add styles for mobile devices */
+}
